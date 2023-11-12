@@ -1,0 +1,184 @@
+.App {
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.logo{
+  height: 150px;
+  margin-left: 70px;
+}
+.header {
+  display: flex;
+  background-color: #ffffff;
+  padding-top: 20px;
+}
+
+.header .menu {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.header .menu ul {
+  display: flex;
+  list-style: none;
+  width: 60%;
+  float: left;
+  height: 100%;
+  margin: 0;
+}
+
+.header .menu ul li {
+  padding: 60px 35px 0px 35px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.header .menu ul li a {
+  font-size: 30px;
+  text-decoration: none;
+  color: red;
+  height: 100%;
+  font-size: 20px;
+  font-weight: 700;
+}
+.header .menu ul li:hover {
+  height: 100%;
+  padding: 60px 35px 0px 35px;
+  background-color: red;
+  color: white;
+}
+.header .menu ul li:hover a {
+  color: white;
+}
+
+.kategoriler {
+  display: flex;
+  position: fixed;
+  float: left;
+  background-color: rgb(246, 197, 197);
+  margin-top: 32px;
+  margin-left: 100px;
+}
+
+
+.kategoriler ul {
+  list-style-type: none;
+  background-color: rgb(246, 197, 197);
+  padding-right: 40px;
+  padding-left: 40px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  
+}
+.kategoriler ul li {
+  padding: 20px;
+  border-bottom: 1px solid red;
+}
+.kategoriler ul li:hover {
+  background-color: red;
+  color:white;
+  
+}
+
+.kategoriler ul li:hover a {
+  color:white;
+  }
+.kategoriler ul li a {
+  text-decoration:none;
+  color: red;
+  font-size: large;
+  font-weight: bolder;
+ 
+}
+
+
+.urunler {
+  margin-left: 280px;
+ 
+  width:100%;
+}
+
+
+.etkinlikler {
+  display: flex;
+  justify-content: center;
+  float:left
+  
+}
+
+.etkinlikler a{
+  color:black;
+  font-size:small;
+  font-weight: 200;
+  text-decoration: none;
+}
+.etknlk {
+  background-color: #d6eaf8;
+  width: 200px;
+  height: 200px;
+  margin:30px;
+  margin-left: 90px;
+ 
+  
+}
+
+.etknlk-image {
+  height: 300px;
+  margin-bottom: 2px;
+  background-size: cover;
+}
+.etk-1 {
+  background-image: url(../src/kitap.gif);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border:2px;
+}
+
+.etk-2 {
+  background-image: url(../src/dans.gif);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border:2px;
+}
+
+.etk-3 {
+  background-image: url(../src/oyun.gif);
+  height: 200px;
+  width: 200px;
+  border:2px;
+}
+
+.etk-4{
+  background-image: url(../src/müzik.gif);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border:2px;
+}
+
+
+
+.etk-5 {
+  background-image: url(../src/resim.gif);
+  height: 200px;
+  width: 200px;
+  
+  border:2px;
+}
+
+.etk-6 {
+  background-image: url(../src/bulmaca.gif);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border:2px;
+}
+
+ .etknlk h2 {
+  text-align: center;
+  text-decoration: none;
+}
