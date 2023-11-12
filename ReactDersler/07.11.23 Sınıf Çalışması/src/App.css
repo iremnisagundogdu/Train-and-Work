@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+}
+
+
+
+.etkinlikler {
+  display: flex;
+  justify-content: center;
+}
+
+
+.etknlk {
+  background-color: #d6eaf8;
+  width: 400px;
+  height: 400px;
+  
+  margin: 50px;
+  
+}
+
+.etknlk-image {
+  height: 300px;
+  margin-bottom: 15px;
+  background-size: cover;
+}
+.etk-1 {
+  background: url(../public/images/kitap6.gif);
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border:2px;
+}
+
+.etk-2 {
+  background-image: url(../public/images/dans.gif);
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border:2px;
+}
+
+.etk-3 {
+  background-image: url(../public/images/oyun3.gif);
+  height: 400px;
+  width: 400px;
+  border:2px;
+}
+
+.etk-4{
+  background-image: url(../public/images/müzik4.gif);
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border:2px;
+}
+
+
+
+.etk-5 {
+  background-image: url(../public/images/resim3.gif);
+  height: 400px;
+  width: 400px;
+  
+  border:2px;
+}
+
+.etk-6 {
+  background-image: url(../public/images/bulmaca.gif);
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border:2px;
+}
+
