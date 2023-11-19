@@ -23,6 +23,5 @@ let paragrafEkle=()=>{
     let paragraf='<p class="'+paragrafClass+'" style="font-size:'+paragrafFontu+'px">'+paragrafYazisi+'</p>';
  
     content.innerHTML+=paragraf;
-    alert("Paragraf Ekleme Başarılı")  
-          
+    alert("Paragraf Ekleme Başarılı")           
 }
