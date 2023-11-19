@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var sayi1=prompt("1. Sayıyı Giriniz",0);
+        var oprt=prompt("Operator Giriniz (+-*/%)","+");
+        var sayi2=prompt("2. Sayıyı Giriniz",0);
+
+        if(oprt=="+"){
+            alert("Toplama Sonucu: "+(Number(sayi1)+Number(sayi2)));
+        }
+        else if(oprt=="-"){
+            alert("Çıkartma Sonucu: "+(Number(sayi1)-Number(sayi2)));
+        }
+        else if(oprt=="/"){
+            alert("Bölme Sonucu: "+(Number(sayi1)/Number(sayi2)));
+        }
+        else if(oprt=="*"){
+            alert("Çarpma Sonucu: "+(Number(sayi1)*Number(sayi2)));
+        }
+        else if(oprt=="%"){
+            alert("Mod Sonucu: "+(Number(sayi1)%Number(sayi2)));
+        }
+        else{
+            alert("Hatalı Operatör Girişi");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
