@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <h1 id="result"></h1>
+   
+    <p id="yazi">
+
+    </p>
+    <script>
+        // alert("Merhaba Js");
+        // console.log("Merhaba Dünya");
+        // document.write("Merhaba Site");
+
+        // document.write("<br>Merhaba <br>");
+        // document.write("Web Site");
+
+
+        //Değişkenler
+
+        var sayi=5;//int
+        var ad="Erhan";//string
+        var kesir=5.5;
+        var karakter='K';
+        var yas="33";
+        var yeniYas=Number(yas);
+
+        var sayi1=5;
+        var sayi2=8;
+
+        //alert(sayi1+sayi2);
+
+        //Aritmetik Operatörler
+
+        /*
+            + sayısal değerlerde toplama sözel değerlerde ise değerleri birleştirir yan yana yazar
+            - sayısal değerlerde çıkartma işlemi yapar
+            * çarpma
+            / bölme
+            % Mod(kalanı bulma). Küsürattan kurtulma
+
+        */
+
+        var soyad="Kaya";
+        //alert(ad+" "+soyad);
+        //alert(yas+ad);
+        // alert(sayi1+sayi2+ad)//13Erhan
+        // alert(ad+sayi1+sayi2)//Erhan58
+        // alert(ad+(sayi1+sayi2))//Erhan13
+        // alert(ad+(sayi1+sayi2)+sayi)//Erhan135
+
+        var sayi3=13;
+        var sayi4=3;
+
+        var kalan=sayi3%sayi4;
+        var yeniSayi3=sayi3-kalan;
+
+        //alert(yeniSayi3/sayi4);
+
+        document.getElementById("result").innerHTML="<i>"+(yeniSayi3/sayi4)+"</i>";//belirtilen tagın içerisine html tagları ile birlikte yazı yazar
+       // document.getElementById("result").innerText="<i>"+(yeniSayi3/sayi4)+"</i>";// belirtilen tagın içerisinde html olsa bile düz metin olarak yazar
+       // document.getElementById("result").textContent="<i>"+(yeniSayi3/sayi4)+"</i>";
+
+
+       //Atama Operatörleri
+       /*
+        = soldaki değişkene sağdaki değeri atar
+        += sayısal değerler soldaki sayı  ile sağdaki sayıyı toplar soldaki değişkene atama yapar. Sözel değerde ise soldaki değere sağdakini ekler
+        -= soldaki sayıdan sağdaki sayıyı çıkartıp kalanı soldaki değişkene aktarır
+        *=
+        /=
+        %=
+
+       */
+
+       var number1=5;
+       number1+=7;//number1=5+7; //number1=number1+7;
+
+       //alert(number1);
+
+       var isim="Erhan";
+       isim+=" Kaya";
+      // alert(isim);
+
+       var number2=17;
+       number2%=3;
+       //alert(number2);  
+
+
+       //var const let değişkenler ve özellikleri
+
+       //var değişkeni 
+       /*
+        yapı içerisinde sürekli kullanılabile ve tekrar tekrar değer atanabilen bir değişken yapısıdır.
+        sadece değişken değil fonksiyon ve array(dizi) gibi yapılarıda tutma özelliğine sahiptir.
+        bellekte çok yer kaplar. işlem hacmi büyüktür
+       */
+        var deger=123;//variable Initialization //veriyi önceden atama işlemi
+        var yazi;//variable Declaration //değişkeni oluşturup bırakma //undefined - tanımsız
+
+         alert(deger);
+         alert(yazi);
+         yazi=55; //defined //değer atanmış
+         alert(yazi);
+
+    </script>
+</body>
+</html>
