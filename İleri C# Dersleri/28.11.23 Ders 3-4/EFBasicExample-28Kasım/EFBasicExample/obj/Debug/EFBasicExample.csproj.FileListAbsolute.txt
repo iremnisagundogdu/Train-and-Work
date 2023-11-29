@@ -1,0 +1,15 @@
+C:\Users\irem_\source\repos\EFBasicExample\EFBasicExample\bin\Debug\EFBasicExample.exe.config
+C:\Users\irem_\source\repos\EFBasicExample\EFBasicExample\bin\Debug\EFBasicExample.exe
+C:\Users\irem_\source\repos\EFBasicExample\EFBasicExample\bin\Debug\EFBasicExample.pdb
+C:\Users\irem_\source\repos\EFBasicExample\EFBasicExample\bin\Debug\EntityFramework.dll
+C:\Users\irem_\source\repos\EFBasicExample\EFBasicExample\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\irem_\source\repos\EFBasicExample\EFBasicExample\bin\Debug\EntityFramework.xml
+C:\Users\irem_\source\repos\EFBasicExample\EFBasicExample\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\irem_\source\repos\EFBasicExample\EFBasicExample\obj\Debug\EFBasicExample.csproj.AssemblyReference.cache
+C:\Users\irem_\source\repos\EFBasicExample\EFBasicExample\obj\Debug\EFBasicExample.csproj.CoreCompileInputs.cache
+C:\Users\irem_\source\repos\EFBasicExample\EFBasicExample\obj\Debug\EFBasicExample.csproj.CopyComplete
+C:\Users\irem_\source\repos\EFBasicExample\EFBasicExample\obj\Debug\EFBasicExample.exe
+C:\Users\irem_\source\repos\EFBasicExample\EFBasicExample\obj\Debug\EFBasicExample.pdb
+C:\Users\irem_\source\repos\EFBasicExample\EFBasicExample\obj\Debug\EFBasicExample.Migrations.dbCreateMg.resources
+C:\Users\irem_\source\repos\EFBasicExample\EFBasicExample\obj\Debug\EFBasicExample.csproj.GenerateResource.cache
+C:\Users\irem_\source\repos\EFBasicExample\EFBasicExample\obj\Debug\EFBasicExample.Migrations.categoryEdit.resources
