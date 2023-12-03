@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\EFBasicExample",
+    "\\EFBasicExample\\Entity",
+    "\\EFBasicExample\\Entity\\Controllers",
+    "\\EFBasicExample\\Entity\\Interfaces"
+  ],
+  "SelectedNode": "\\EFBasicExample\\Entity\\Controllers\\CategoryController.cs",
+  "PreviewInSolutionExplorer": false
+}
