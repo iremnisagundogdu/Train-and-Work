@@ -1,0 +1,41 @@
+﻿@*View'e gönderdiğim modeli habgi türden gönderdiysem o türde burada yakalamam gerekir. Aşağıdaki gibi.*@
+
+@model  string[] // Burada model yazısının tüm harfleri küçük olmak zorunda.! Gönderdiğin verinin türünü de yanında belirtmelisin.
+
+@{
+    ViewBag.Title = "Home Page";
+    int i = 0;
+}
+
+<h1>@ViewBag.Erhan</h1>  @*Bu yapıyla Controller'daki veriyi arayüze çekmiş oldum.*@
+
+<h2>@Model[0]</h2> @*Burada Model'in ilk harfi büyük!*@
+
+<ul>
+    @foreach (var item in ViewBag.Isimler)
+    {
+        i++; // Burada bu ifade C# kodu olduğu için ekrana yazılmaz. Arka planda çalışır. Yazdırmak için HTML etiketi içerisine @ işareti ile birlikte vermelisin.
+        //Aşağıda li etiketi içerisine yazdım.(@i)
+        <li>@i  @item</li>
+    }
+
+</ul>
+
+@*!!! Proje çalıştıktan sonra, cshtml sayfasında yapmış olduğun değişikliği sayfayı yenileyerek görüntüleyebilirsin. 
+Controller da yapmış olduğun değişiklikler için ise projeyi tekrar başlatman gerekir.*@
+
+@*Razor View Engine Nedir? cshtml Razorpage demek aslında.
+    Bu sayfada html kodlarımızı yazıyoruz. C# kodlarımızı da başına @ ifadesi koyarak dahil ediyoruz.(RAZOR)
+
+Razor View Engine web sayfalarımız içerisinde C# ile HTML ve sunucu taraflı kodlar yazmamızı sağlayan bir işaretleme sözdizimidir (markup syntax).
+Bu iş için kullanılan Razor Sözdizimi MVC uygulamalarımız içerisinde kolay bir şekilde HTML üretmemize yardımcı olur.
+
+Neden Kullanmalıyız?
+Öğrenmesi basittir, kodumuzu çok sadeleştirir, zaman tasarrufu sağlar.
+
+Yazacağınız kod her zaman @{ … } içerisinde olmalı.
+Komutlarınızın sonunda noktalı virgül “;” bulunmalı.
+Kullandığınız dosyaların uzantısı .cshtml olmalı.
+Değişkenleriniz “var” anahtar sözcüğüyle tanımlanmış olmalı.
+Satır içi ifadeleriniz (değişkenler ve fonksiyonlar) “@” ile başlamalı.
+C# kodlarınız büyük-küçük harfe duyarlıdır.*@
