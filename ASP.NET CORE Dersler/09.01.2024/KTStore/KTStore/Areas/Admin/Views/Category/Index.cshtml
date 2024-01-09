@@ -1,0 +1,55 @@
+﻿@model IEnumerable<KTStore.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<div class="card p-4">
+    <h3>Category List</h3>
+    <p>
+        <a asp-area="Admin" asp-controller="Category" asp-action="Create" class="btn btn-primary btn-sm float-end"><i class="fa fa-plus"></i> Create New</a>
+    </p>
+    <label class="text-warning">@TempData["Message"]</label>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Image)
+                   
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Name)
+                </th>
+               <th>
+                    @Html.DisplayNameFor(model => model.IsStatus)
+                   
+                </th>
+                
+                <th>Settings</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img src="~/images/category/@(String.IsNullOrEmpty(item.Image)?"empty.jpg":item.Image)" class="rounded" width="60px">
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                   
+                    <td>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" data-val="true" value="true" checked="@item.IsStatus" disabled>
+                        </div>
+                    </td>
+                   <td>
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-success btn-sm"><i class="fa fa-cogs"></i> Edit</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i> Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

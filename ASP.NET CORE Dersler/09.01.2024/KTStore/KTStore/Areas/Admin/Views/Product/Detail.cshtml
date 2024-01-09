@@ -1,0 +1,14 @@
+﻿@model ShoppingCart
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<h1>Detail - @Model.Product.Name</h1>
+@if (Model.Product.Stock > 0)
+{
+    <a class="btn btn-success" ><i class="bi bi-cart4"></i> Sepete Ekle</a>
+}
+else
+{
+    <label class="text-warning">Ürün Stokta Yok</label>
+}
