@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZP8v0jIu4quyk3//UljwQqutJx5OHvamolJ019nr/GcrXEF+MAubRBHTmysF2a8Tsl2iZBVI8ZYUsXWBzJtreQ==",
+  "dgSpecHash": "/2H/zQEEkfrA1JJnDlAHQfulASHoW5jVH1n+8A8oAOdjYcsbFltGBb9FH1nuBfKpbJs6kDGu9Fk4QstQw5y1+g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\irem_\\source\\repos\\ProductManagementWebApı\\ProductManagementWebApı\\ProductManagementWebApı.csproj",
+  "projectFilePath": "C:\\Users\\irem_\\Documents\\GitHub\\Train-and-Work\\Api Geliştirme ve Yönetimi Dersler\\26.12.2023-Ders 1-2\\ProductManagementWebApı\\ProductManagementWebApı\\ProductManagementWebApı.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\irem_\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\irem_\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

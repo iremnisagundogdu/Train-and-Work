@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ApMSJBFAaHtK4foIwWER/F9aES/xPSITNOPIgP8fiTsBQljbIGQwBLjw5/BGqmoVjA3nWlMr8EbEof8v/Um92Q==",
+  "dgSpecHash": "CmjWx8e33zaVg1jyDH0ax35WW4TdO9rX54PBhzPvRa6GApOHDLqc8YCWYqAazvrIEqjvD9963fr1NW2eXUAipg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\irem_\\Desktop\\FirstWebCoreApplication2\\FirstWebCoreApplication2\\FirstWebCoreApplication2.csproj",
+  "projectFilePath": "C:\\Users\\irem_\\Documents\\GitHub\\Train-and-Work\\ASP.NET CORE Dersler\\02.01.2024\\FirstWebCoreApplication2\\FirstWebCoreApplication2\\FirstWebCoreApplication2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\irem_\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\irem_\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

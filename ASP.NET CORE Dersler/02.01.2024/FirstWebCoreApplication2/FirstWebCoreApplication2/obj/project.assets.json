@@ -10688,11 +10688,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\irem_\\Desktop\\FirstWebCoreApplication2\\FirstWebCoreApplication2\\FirstWebCoreApplication2.csproj",
+      "projectUniqueName": "C:\\Users\\irem_\\Documents\\GitHub\\Train-and-Work\\ASP.NET CORE Dersler\\02.01.2024\\FirstWebCoreApplication2\\FirstWebCoreApplication2\\FirstWebCoreApplication2.csproj",
       "projectName": "FirstWebCoreApplication2",
-      "projectPath": "C:\\Users\\irem_\\Desktop\\FirstWebCoreApplication2\\FirstWebCoreApplication2\\FirstWebCoreApplication2.csproj",
+      "projectPath": "C:\\Users\\irem_\\Documents\\GitHub\\Train-and-Work\\ASP.NET CORE Dersler\\02.01.2024\\FirstWebCoreApplication2\\FirstWebCoreApplication2\\FirstWebCoreApplication2.csproj",
       "packagesPath": "C:\\Users\\irem_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\irem_\\Desktop\\FirstWebCoreApplication2\\FirstWebCoreApplication2\\obj\\",
+      "outputPath": "C:\\Users\\irem_\\Documents\\GitHub\\Train-and-Work\\ASP.NET CORE Dersler\\02.01.2024\\FirstWebCoreApplication2\\FirstWebCoreApplication2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\irem_\\AppData\\Roaming\\NuGet\\NuGet.Config",

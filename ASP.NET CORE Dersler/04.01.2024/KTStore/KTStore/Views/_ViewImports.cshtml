@@ -1,0 +1,21 @@
+﻿@using KTStore
+@using KTStore.Models
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+scoped
+singleton smtpp
+transient 
+
+if(user role== null
+{
+    await _userMAnager.AddtoRoleAsycn(user,Other.Role_User);
+}
+else
+{
+    await _userMAneger.AddToRoleASycn(user,user.Role);
+}
+
+if(user.Role==null)
+{
+    await _signInMSnsgrt.SignInAsycn
+}
