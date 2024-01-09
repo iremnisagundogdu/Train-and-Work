@@ -10,11 +10,12 @@ namespace ProductManagementWebApı.Controllers
     {
         private static List<Product> _products = new List<Product>()
         {
-            new Product(){Id=1, Name="Asus Bilgisayar", Price=15428, Stock=55, CategoryId=1, IsStatus=true},
+            new Product(){Id=1, Name="Samsung Bilgisayar", Price=15428, Stock=55, CategoryId=1, IsStatus=true},
             new Product(){Id=2, Name="Samsung S20", Price=28459, Stock=84, CategoryId=2, IsStatus=true},
             new Product(){Id=3, Name="Ipad 10 ", Price=15428, Stock=12, CategoryId=3, IsStatus=true},
             new Product(){Id=4, Name="Arçelik Buzdolabı", Price=44856, Stock=12, CategoryId=4, IsStatus=true},
         };
+        
 
         public IEnumerable<Product> GetAll() 
         {
