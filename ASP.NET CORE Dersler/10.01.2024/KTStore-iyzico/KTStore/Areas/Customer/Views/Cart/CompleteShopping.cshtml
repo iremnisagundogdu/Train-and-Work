@@ -1,0 +1,84 @@
+﻿@model ShoppingCardVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <form method="post">
+                <div class="form-group mb-2">
+                    <label for="Name">Name</label>
+                    <input type="text" class="form-control" id="Name" name="Name" placeholder="Enter Name">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="Surname">Surname</label>
+                    <input type="text" class="form-control" id="Surname" name="Surname" placeholder="Enter Surname">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="Address">Address</label>
+                    <input type="text" class="form-control" id="Address" name="Address" placeholder="Enter Address">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="PostCode">Post Code</label>
+                    <input type="text" class="form-control" id="PostCode" name="PostCode" placeholder="Enter Post Code">
+                </div>
+                <div class="form-group mb-2">
+                    <label for="Sehir">Şehir</label>
+                    <select name="Sehir" id="Sehir" class="form-control">
+                        <option value="İstanbul">İstanbul</option>
+                        <option value="Ankara">Ankara</option>
+                        <option value="Adana">Adana</option>
+                        <option value="Antalya">Antalya</option>
+                        <option value="İzmir">İzmir</option>
+                        <option value="Batman">Batman</option>
+                    </select>
+                </div>
+                <div class="form-group mb-2">
+                    <label for="Ulke">Ülke</label>
+                    <select name="Ulke" id="Ulke" class="form-control">
+                        <option value="Türkiye">Türkiye</option>
+                        <option value="Amerika">Amerika</option>
+                        <option value="Çin">Çin</option>
+                        <option value="Almanya">Almanya</option>
+                        <option value="İngiltere">İngiltere</option>
+                    </select>
+                </div>
+                <a class="btn btn-primary float-start" asp-controller="Cart" asp-action="Index">View Cart</a>
+
+                <button type="submit" class="btn btn-primary float-end">Biglileri Kaydet</button>
+            </form>
+        </div>
+        <div class="col-4">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Product Name</th>
+                        <th>Total Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.ListCart)
+                    {
+                        <tr>
+                            <td><img src="~/images/product/@(item.Product.Image==null?"empty.jpg":item.Product.Image)" width="30px" /></td>
+                            <td>@item.Product.Name</td>
+                            <td>@((item.Product.Price * item.Quantity).ToString("0.00")) TL</td>
+                        </tr>
+                    }
+                    <tr>
+                        <td colspan="2" class="text-align-rigth">
+                            <strong>Total Price</strong>
+                        </td>
+                        <td>
+                            <span class="h2">@Model.OrderHeader.OrderTotal.ToString("0.00") TL</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <a class="btn btn-success form-control" asp-controller="Cart" asp-action="Order">Ödeme Yap</a>
+        </div>
+    </div>
+</div>

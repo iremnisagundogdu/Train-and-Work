@@ -1,0 +1,28 @@
+﻿@model Cart
+
+<div class="card p-4">
+    <h3>Shopping Cart</h3>
+    <table class="table">
+
+        <tbody>
+            @foreach (var item in Model.CartLines)
+            {
+                <tr>
+                    <td>
+                        <img src="~/images/product/@(String.IsNullOrEmpty(item.Product.Image)?"empty.jpg":item.Product.Image)" class="rounded" width="60px">
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Product.Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Product.Price)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Quantity) Adet
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,74 @@
+﻿@model ShoppingCart
+@{
+    ViewData["Title"] = "Detail";
+}
+
+<div class="container">
+     <nav class="breadcrumb-nav">
+         <ol class="breadcrumb">
+             <li class="breadcrumb-item"><a href="~/Customer/Home"><i class="fa fa-home"></i></a></li>
+             <li class="breadcrumb-item"><a >@Model.Product.Name</a></li>
+         </ol>
+     </nav>
+
+     <div class="card p-4">
+           <div class="row">
+               <div class="col-4">
+                   <img src="~/images/product/@(Model.Product.Image==null?"empty.jpg":Model.Product.Image)" width="100%" />
+               </div>
+               <div class="col-8">
+                   <h3>@Model.Product.Name</h3>
+                   <hr />
+                   <p>
+                       @Model.Product.Description
+                   </p>
+                   <hr />
+                   <label>Stock: @(Model.Product.Stock > 0 ? Model.Product.Stock + "  Adet" : "Stok Yok")</label>
+                   <hr />
+                   <h3 class="text-primary">@Model.Product.Price.ToString("0.00") TL</h3>
+                   <hr />
+
+                   <form method="post">
+                       <input type="hidden" asp-for="ProductId" />
+                    <div class="input-group mb-3" style="width:150px">
+                        <div class="input-group-prepend">
+                            <button class="btn btn-outline-success" type="button" onclick="quantityPlus()">+</button>
+                        </div>
+                        <input asp-for="Quantity" class="form-control" id="Quantity" />
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-danger" type="button" onclick="quantityMinus()">-</button>
+                        </div>
+                    </div>
+                    <script>
+                        function quantityPlus(){
+                            var quantityInput = document.getElementById("Quantity");
+                            var quantity = quantityInput.value;
+                            
+                            quantity++;
+                            if (quantity <= @Model.Product.Stock) {
+                                quantityInput.value = quantity;
+                            }
+                        }
+                        function quantityMinus() {
+                            var quantityInput = document.getElementById("Quantity");
+                            var quantity = quantityInput.value;
+
+                            quantity--;
+                            if (quantity > 0) {
+                                quantityInput.value = quantity;
+                            }
+                        }
+                    </script>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <input type="submit" class="btn btn-success" value="Add To Card" />
+                    }
+                    else
+                    {
+                        <a class="btn btn-secondary" asp-area="Identity" asp-page="/Account/Login">Login</a>
+                    }
+                </form>
+            </div>
+           </div>
+     </div>
+</div>

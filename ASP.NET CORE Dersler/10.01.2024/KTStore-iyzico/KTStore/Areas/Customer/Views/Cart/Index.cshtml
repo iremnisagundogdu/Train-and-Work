@@ -1,0 +1,47 @@
+﻿@model ShoppingCardVM
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<form method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <table class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Product Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.ListCart)
+                        {
+                            <tr>
+                                <td><img src="~/images/product/@(item.Product.Image==null?"empty.jpg":item.Product.Image)" width="70px" /></td>
+                                <td>@item.Product.Name</td>
+                                <td>@item.Quantity Adet</td>
+                                <td>@item.Product.Price.ToString("0.00") TL</td>
+                                <td>@((item.Product.Price*item.Quantity).ToString("0.00")) TL</td>
+                            </tr>
+                        }
+                        <tr>
+                            <td colspan="4" class="text-align-rigth">
+                                <strong>Total Price</strong>
+                            </td>
+                            <td>
+                                <span class="h2">@Model.OrderHeader.OrderTotal.ToString("0.00") TL</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a class="btn btn-primary float-start" asp-controller="Home" asp-action="Index">Alışverişe Devam Et</a>
+                <a class="btn btn-success float-end" asp-controller="Cart" asp-action="CompleteShopping">Alışverişi Tamamla</a>
+            </div>
+        </div>
+    </div>
+</form>
